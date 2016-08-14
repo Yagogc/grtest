@@ -1,0 +1,256 @@
+// VARIABLES
+
+$ligthpink: #D95EAF;
+$darkpink: #C32B90;
+$mediumpink: #B80D7F;
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  height: 164px;
+  background-color: white;
+  padding: 30px;
+  .container {
+    max-width: calc(1280px - 336px);
+  }
+}
+
+section {
+  .container {
+    max-width: calc(1280px - 336px);
+  }
+  &.section_1 {
+    padding: 60px 20px;
+    background: linear-gradient(175deg, $ligthpink 0%, $ligthpink 62.9%, $darkpink 63%, $darkpink 100%);
+    color: white;
+    .section_1_enterComp {
+      h3 {
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 22px;
+        margin-bottom: 20px;
+        &::after {
+          content: '';
+          height: 7px;
+          width: 67px;
+          background: white;
+          bottom: 0;
+          display: block;
+          margin-top: 19px;
+        }
+      }
+      p {
+        font-size: 15px;
+        line-height: 30px;
+        font-weight: lighter;
+      }
+      button {
+        text-transform: uppercase;
+        border-radius: 0;
+        background-color: black;
+        border: 2px solid black;
+        color: white;
+        transition: all 0.5s ease-in-out;
+        font-weight: bold;
+        letter-spacing: 2px;
+        padding: 10px 40px;
+        margin-top: 60px;
+        @media (max-width: 767px) {
+          width: 100%;
+        }
+        &:hover {
+          color: black;
+          background: hsla(255, 255, 255, 0.5);;
+        }
+      }
+    }
+    .section_1_loreal_boxes {
+      color: white;
+
+      .casting_logo {
+        display: block;
+        margin: 20px auto;
+      }
+
+      .loreal_boxes {
+        position: relative;
+        height: 400px;;
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+        .loreal_box_1 {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin-left: auto;
+          margin-right: auto;
+          z-index: 999;
+        }
+        .loreal_box_2 {
+          position: absolute;
+          bottom: 35px;
+          right: 0;
+          z-index: 99;
+        }
+        .loreal_box_3 {
+          position: absolute;
+          bottom: 50px;
+          left: 0;
+          z-index: 9;
+        }
+      }
+    }
+  }
+}
+
+.section_2 {
+  background: url('../images/section_2_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 0 40px 0;
+
+  .white_lies {
+    background: hsla(255,255,255,0.78);
+    text-align: center;
+    padding: 40px;
+
+    h3 {
+      display: inline-block;
+      text-transform: uppercase;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 40px;
+      &::after {
+        content: '';
+        height: 7px;
+        width: 67px;
+        background: black;
+        bottom: 0;
+        display: block;
+        margin: 0 auto;
+        margin-top: 19px;
+      }
+    }
+    p {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      letter-spacing: 1px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 30px;
+    }
+  }
+
+  .white_lies_boxes {
+    max-width: 700px;
+    width: 100%;
+    margin: 20px auto;
+    .white_lies_box {
+      text-align: center;
+      color: white;
+      margin: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+      .uncover {
+        height: 0px;
+        padding: 0px 20px;
+        background-color: $mediumpink;
+        transition: all 0.5s ease-in-out;
+        overflow: hidden;
+        .uncover_text {
+          .fa {
+            font-size: 40px;
+            display: block;
+            margin-bottom: 20px;
+          }
+          span {
+            font-style: italic;
+            font-weight: 300;
+            line-height: 27px;
+            font-size: 15px;
+          }
+        }
+      }
+      .cover {
+        height: 300px;
+        background-color: $ligthpink;
+        transition: all 0.5s ease-in-out;
+        position: relative;
+        .cover_text {
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          transform: translateY(-50%);
+          overflow: hidden;
+          h5 {
+            font-size: 16px;
+            text-transform: uppercase;
+            transition: all 0.5s ease-in-out;
+          }
+          p {
+            opacity: 1;
+            transition: all 0.3s ease;
+            height: 30px;
+            margin: 0;
+            text-transform: uppercase;
+            font-size: 11px;
+            margin: 0 auto;
+            letter-spacing: 1px;
+            width: 150px;
+          }
+        }
+      }
+    }
+    .white_lies_box.active {
+      .uncover {
+        height: 230px;
+        padding: 20px;
+        .uncover_text {
+          visibility: visible;
+        }
+      }
+      .cover {
+        height: 70px;
+        line-height: 70px;
+        .cover_text {
+          h5 {
+            font-size: 12px;
+          }
+          p {
+            opacity: 0;
+            height: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+footer {
+  background-color: #262023;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 4px solid white;
+
+  ul {
+    padding: 0;
+    li {
+      list-style: none;
+      margin: 10px 0;
+
+      .fa-stack {
+        font-size: 30px;
+        color: $ligthpink;
+      }
+    }
+  }
+}
