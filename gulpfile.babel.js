@@ -37,13 +37,7 @@ import pkg from './package.json';
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
-// Lint JavaScript
-// gulp.task('lint', () =>
-//   gulp.src('app/scripts/**/*.js')
-//     .pipe($.eslint())
-//     .pipe($.eslint.format())
-//     .pipe($.if(!browserSync.active, $.eslint.failOnError()))
-// );
+
 
 // Optimize images
 gulp.task('images', () =>
@@ -195,7 +189,7 @@ gulp.task('serve:dist', ['default'], () =>
 gulp.task('default', ['clean'], cb =>
   runSequence(
     'styles',
-    ['lint', 'html', 'scripts', 'images', 'copy'],
+    ['html', 'scripts', 'images', 'copy'],
     'generate-service-worker',
     cb
   )
