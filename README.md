@@ -2,7 +2,7 @@
 
 # Overview
 
-This website is a test for an interview. The task of the test was to replicate as much as possible [this design](), enhaced it and make it responsive as well. For a quicker set up and development I used the next technologies:
+This website is a test for an interview. The task of the test was to replicate as much as possible [this design](https://raw.githubusercontent.com/Yagogc/grtest/master/design.jpg), enhaced it and make it responsive as well. For a quicker set up and development I used the next technologies:
 
 
 
