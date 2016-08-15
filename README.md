@@ -12,4 +12,4 @@ This website is a test for an interview. The task of the test was to replicate a
 | [Twitter Bootstrap](http://getbootstrap.com/) | CSS framework.
 | [Animate.css](http://daneden.github.io/animate.css/) | CSS library for animations.
 | [WOW.js](http://mynameismatthieu.com/WOW/) | JS library to eveals animations on scroll (Uses anmiate.css).
-| Gulp | Used for minification, concatenation, sass compilation...
+| [FontAwesome](http://fontawesome.io/) | Scalable vector icons.
